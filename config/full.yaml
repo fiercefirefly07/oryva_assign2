@@ -1,0 +1,69 @@
+name: full
+seed: 20261022
+planning_year: 2026
+start_week: 1
+num_weeks: 52
+reference_date: "2026-01-01"
+currency: "INR"
+
+scale:
+  num_skus: 3000
+  num_locations: 50
+  num_suppliers: 500
+  num_purchase_orders: 10000
+  avg_suppliers_per_sku: 2
+  substitute_sku_share: 0.20
+  make_sku_share: 0.15
+  max_bom_components: 3
+
+demand:
+  pareto_alpha: 1.5
+  base_weekly_mean: 40.0
+  seasonality_amplitude: 0.25
+  dispersion_k: 5.0
+  spike_probability: 0.03
+  spike_min_multiplier: 2.2
+  spike_max_multiplier: 3.8
+
+supplier:
+  constrained_share: 0.20
+  unreliable_share: 0.18
+  lead_time_gamma_shape: 3.5
+  lead_time_gamma_scale: 3.0
+  transport_delay_probability: 0.12
+  transport_delay_lognorm_mean: 1.5
+  transport_delay_lognorm_sigma: 0.65
+
+inventory:
+  safety_stock_weeks: 1.5
+  initial_coverage_min_weeks: 1.5
+  initial_coverage_max_weeks: 4.5
+  reserved_share_max: 0.12
+
+production:
+  capacity_buffer_ratio: 1.15
+  constrained_week_share: 0.15
+  overtime_cost_multiplier: 1.35
+
+mitigation:
+  cost_weight: 0.35
+  service_weight: 0.45
+  lead_time_weight: 0.20
+  max_options_per_shortage: 4
+
+anomalies:
+  double_counted_inbound: 10
+  unapproved_substitute: 10
+  supplier_capacity_exceeded: 10
+  shortage_without_lead_time: 10
+  uom_mismatch: 10
+
+export:
+  output_dir: "data"
+  float_format: "%.4f"
+  line_terminator: "\n"
+  formats:
+    - csv
+    - json
+    - sql
+    - sqlite

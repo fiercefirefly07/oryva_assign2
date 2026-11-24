@@ -1,0 +1,7 @@
+[
+  {"location_id": "LOC-0001", "location_name": "Gurugram Plant 01", "location_type": "PLANT", "region": "NORTH", "storage_capacity_units": 117512, "daily_production_capacity": 1748, "holding_cost_per_unit_week": 8.4645, "effective_from": "2026-01-01", "effective_to": null, "lifecycle_state": "ACTIVE"},
+  {"location_id": "LOC-0002", "location_name": "Bengaluru Regional Hub 02", "location_type": "REGIONAL_HUB", "region": "SOUTH", "storage_capacity_units": 101075, "daily_production_capacity": 0, "holding_cost_per_unit_week": 3.6589, "effective_from": "2026-01-01", "effective_to": null, "lifecycle_state": "ACTIVE"},
+  {"location_id": "LOC-0003", "location_name": "Kolkata Warehouse 03", "location_type": "WAREHOUSE", "region": "EAST", "storage_capacity_units": 26693, "daily_production_capacity": 0, "holding_cost_per_unit_week": 11.9861, "effective_from": "2026-01-01", "effective_to": null, "lifecycle_state": "ACTIVE"},
+  {"location_id": "LOC-0004", "location_name": "Pune Distribution Center 04", "location_type": "DISTRIBUTION_CENTER", "region": "WEST", "storage_capacity_units": 63032, "daily_production_capacity": 0, "holding_cost_per_unit_week": 10.297, "effective_from": "2026-01-01", "effective_to": null, "lifecycle_state": "ACTIVE"},
+  {"location_id": "LOC-0005", "location_name": "Indore Warehouse 05", "location_type": "WAREHOUSE", "region": "CENTRAL", "storage_capacity_units": 96233, "daily_production_capacity": 0, "holding_cost_per_unit_week": 11.1632, "effective_from": "2026-01-01", "effective_to": null, "lifecycle_state": "ACTIVE"}
+]

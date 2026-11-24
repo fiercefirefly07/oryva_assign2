@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oryva-planning"
+version = "1.0.0"
+description = "Oryva AI Demand, Inventory & Supply Planning — deterministic synthetic data generator, planning engine, anomaly injection/detection, and DuckDB SQL validation suite."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.0.0",
+    "duckdb>=1.0.0",
+    "pydantic>=2.7.0",
+    "typer>=0.12.0",
+    "pyyaml>=6.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "ruff>=0.4.4",
+]
+ui = [
+    "streamlit>=1.35.0",
+]
+
+[project.scripts]
+oryva-planning = "oryva_planning.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra -q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,6 @@
+location_id,location_name,location_type,region,storage_capacity_units,daily_production_capacity,holding_cost_per_unit_week,effective_from,effective_to,lifecycle_state
+LOC-0001,Gurugram Plant 01,PLANT,NORTH,117512,1748,8.4645,2026-01-01,,ACTIVE
+LOC-0002,Bengaluru Regional Hub 02,REGIONAL_HUB,SOUTH,101075,0,3.6589,2026-01-01,,ACTIVE
+LOC-0003,Kolkata Warehouse 03,WAREHOUSE,EAST,26693,0,11.9861,2026-01-01,,ACTIVE
+LOC-0004,Pune Distribution Center 04,DISTRIBUTION_CENTER,WEST,63032,0,10.2970,2026-01-01,,ACTIVE
+LOC-0005,Indore Warehouse 05,WAREHOUSE,CENTRAL,96233,0,11.1632,2026-01-01,,ACTIVE

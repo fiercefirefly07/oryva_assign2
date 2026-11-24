@@ -1,0 +1,62 @@
+{
+  "double_counted_inbound": {
+    "detected": 3,
+    "expected": 3,
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 3
+  },
+  "overall": {
+    "detected": 15,
+    "expected": 15,
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 15
+  },
+  "shortage_without_lead_time": {
+    "detected": 3,
+    "expected": 3,
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 3
+  },
+  "supplier_capacity_exceeded": {
+    "detected": 3,
+    "expected": 3,
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 3
+  },
+  "unapproved_substitute": {
+    "detected": 3,
+    "expected": 3,
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 3
+  },
+  "uom_mismatch": {
+    "detected": 3,
+    "expected": 3,
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 3
+  }
+}
